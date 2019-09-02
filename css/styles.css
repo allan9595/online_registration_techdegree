@@ -1,0 +1,64 @@
+* {
+    font-family: 'Merriweather', serif;
+}
+
+header h2.sub-title,
+header p,
+footer{
+   text-align: center;
+   width: 90%;
+   margin: auto;
+   padding: 10px;
+   color: #6c7275;
+}
+
+
+header h2.sub-title,
+form legend {
+    color: #0b4a75;
+}
+
+form legend {
+    font-weight: bold;
+}
+
+form fieldset {
+    border: none;
+}
+
+/*inspired by stackover at: https://stackoverflow.com/questions/9686538/align-labels-in-form-next-to-input*/
+form fieldset.contact label {
+    display: inline-block;
+    text-align: left;
+    width: 90%;
+}
+
+header .header-title{
+    background-color: #052e4a;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+    padding: 20px;
+}
+
+/*credit to https://www.w3schools.com/css/css_form.asp*/
+input[type=text],
+input[type=tel],
+input[type=email], 
+select{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-color: #e8e1e1;
+    border: none;
+}
+
+select {
+    -webkit-appearance: menulist;
+}
+
+input::placeholder{
+    text-align: right;
+}
+
