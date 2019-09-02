@@ -12,7 +12,6 @@ footer{
    color: #6c7275;
 }
 
-
 header h2.sub-title,
 form legend {
     color: #0b4a75;
@@ -24,6 +23,8 @@ form legend {
 
 form fieldset {
     border: none;
+    width: 90%;
+    margin: auto;
 }
 
 /*inspired by stackover at: https://stackoverflow.com/questions/9686538/align-labels-in-form-next-to-input*/
@@ -52,6 +53,15 @@ select{
     box-sizing: border-box;
     background-color: #e8e1e1;
     border: none;
+    color: #6c7275; 
+    border-radius: 5px;
+}
+
+input[type=text]:focus,
+input[type=tel]:focus,
+input[type=email]:focus, 
+.newsletter textarea:focus{
+    border: 3px solid #1a7887;
 }
 
 select {
@@ -62,3 +72,62 @@ input::placeholder{
     text-align: right;
 }
 
+/*Start Newsletter part*/
+
+.newsletter label {
+    padding-left: 1em;
+}
+
+.newsletter textarea {
+    width: 100%;
+    padding: 80px 20px;
+    box-sizing: border-box;
+    background-color: #e8e1e1;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter p {
+    margin-bottom: -0.5em; 
+}
+
+label, p {
+    color: #6c7275;
+}
+
+form .submit {
+    width: 90%;
+    margin: auto;
+}
+
+input[type=submit]{
+    width:100%;
+    padding: 12px 20px;
+    background-color: #2d8d9c;
+    border-radius: 5px;
+    border: none;
+    box-sizing: border-box;
+    margin: 8px 0;
+}
+
+hr {
+    width: 90%;
+    margin: auto;
+}
+
+/*hr styles inspired from https://www.w3schools.com/howto/howto_css_style_hr.asp*/
+.line-header-primary {
+    border-top: 5px solid #052e4a;
+    margin-top: 10px;
+    margin-bottom: 2px;
+}
+
+.line-header-secondary {
+    border-top: 2px solid #052e4a;
+    margin-bottom: 10px;
+}
+
+.line-form {
+    border-top: 2px solid #052e4a;
+    margin-bottom: 10px;
+}

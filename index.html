@@ -9,12 +9,12 @@
         <title>Online Registration</title>
     </head>
     <body>
-        
         <header>
             <h2 class="header-title">THE CODE REVIEW</h2>
             <h2 class="sub-title">Signup for our newsletter</h2>
             <p>Get the latest news on how your code is doing right in your inbox</p>
-            <hr>
+            <hr class="line-header-primary">
+            <hr class="line-header-secondary">
         </header>
         <main>
             <form>
@@ -95,22 +95,24 @@
                     <label for="zipcode">Zip Code</label>
                     <input type="text" id="zipcode">
                 </fieldset>
-
+                <hr class="line-form">
                 <fieldset class="newsletter">
                     <legend>
                         Newsletter
                     </legend>
                     <p>Select the newsletters you would like to receieve</p><br>
                     <input type="checkbox" id="html_news" name="news" value="HTML News"><label for="html_news">HTML News</label><br>
-                    <input type="checkbox" id="css_news" name="news" value="CSS News">CSS News<br>
-                    <input type="checkbox" id="javascript_news" name="news" value="Javascript News">Javascript News<br>
+                    <input type="checkbox" id="css_news" name="news" value="CSS News"><label for="css_news">CSS News</label><br>
+                    <input type="checkbox" id="javascript_news" name="news" value="Javascript News"><label for="javascript_news">News</label><br>
                     <p>Newsletter format</p><br>
-                    <input type="radio" name="format" id="html" value="HTML">HTML<br>
-                    <input type="radio" name="format" id="plain" value="Plain text">Plain text<br>
+                    <input type="radio" name="format" id="html" value="HTML"><label for="html">HTML</label><br>
+                    <input type="radio" name="format" id="plain" value="Plain text"><label for="plain">Plain text</label><br>
                     <p>Other topics you'd like to hear about</p><br>
                     <textarea id="feedback" name="feedback"></textarea>
                 </fieldset>
-                <input name="signup" id="signup" type="button" value="Sign Up">
+                <div class="submit">
+                    <input name="signup" id="signup" type="submit" value="Sign Up">
+                </div>
             </form>
         </main>
         <footer>
