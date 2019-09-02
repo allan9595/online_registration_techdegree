@@ -1,10 +1,9 @@
 * {
     font-family: 'Merriweather', serif;
 }
-
+/*style for header titles*/
 header h2.sub-title,
-header p,
-footer{
+header p{
    text-align: center;
    width: 90%;
    margin: auto;
@@ -21,6 +20,7 @@ form legend {
     font-weight: bold;
 }
 
+/*control fieldset width*/
 form fieldset {
     border: none;
     width: 90%;
@@ -34,6 +34,7 @@ form fieldset.contact label {
     width: 90%;
 }
 
+/*style for header title*/
 header .header-title{
     background-color: #052e4a;
     text-align: center;
@@ -57,11 +58,18 @@ select{
     border-radius: 5px;
 }
 
+#zipcode {
+    width: 50%;
+}
+
+/*following transition effect and background changed added for exceeding grade*/
 input[type=text]:focus,
 input[type=tel]:focus,
 input[type=email]:focus, 
 .newsletter textarea:focus{
     border: 3px solid #1a7887;
+    transition:  1s;
+    background-color: #00f3ff;
 }
 
 select {
@@ -78,6 +86,7 @@ input::placeholder{
     padding-left: 1em;
 }
 
+/*set textarea styles*/
 .newsletter textarea {
     width: 100%;
     padding: 80px 20px;
@@ -100,6 +109,7 @@ form .submit {
     margin: auto;
 }
 
+/*set submit button styles*/
 input[type=submit]{
     width:100%;
     padding: 12px 20px;
@@ -130,4 +140,69 @@ hr {
 .line-form {
     border-top: 2px solid #052e4a;
     margin-bottom: 10px;
+}
+
+/*add the background for footer for exceeding grades*/
+footer {
+    background-color: #052e4a;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+footer p {
+    color: #e8e1e1;
+}
+/*desktop media query*/
+@media (min-width: 768px) {
+    /*set the whole main section width*/
+    form,
+    header .sub-title,
+    header p, 
+    header hr
+    {
+        width: 75%;
+        margin: auto;
+    }
+
+    form .submit {
+        width: 100%;
+    }
+  
+    form fieldset,
+    form hr {
+       padding: 0;
+       margin: 0;
+       width: 100%;
+    }
+
+    form hr {
+        margin: 20px 0 0 0;
+    }
+
+    .newsletter legend {
+        padding-top: 20px;
+    }
+
+    .contact legend{
+        margin-bottom: 20px;
+    }
+
+    /*set the label and form input at same line*/
+    .contact input,
+    .contact select{
+        width: 70%;
+        display: inline-block;
+    } 
+
+    form fieldset.contact label  {
+        float: left;
+        width: 30%;
+        margin-top:20px;
+    }
+
+    #zipcode {
+        width: 50%;
+    }
 }
