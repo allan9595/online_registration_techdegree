@@ -1,6 +1,9 @@
 * {
     font-family: 'Merriweather', serif;
 }
+body {
+    background: #77e0e0
+}
 /*style for header titles*/
 header h2.sub-title,
 header p{
@@ -8,7 +11,7 @@ header p{
    width: 90%;
    margin: auto;
    padding: 10px;
-   color: #6c7275;
+   color: #4e5251;
 }
 
 header h2.sub-title,
@@ -54,12 +57,12 @@ select{
     box-sizing: border-box;
     background-color: #e8e1e1;
     border: none;
-    color: #6c7275; 
+    color: #4e5251; 
     border-radius: 5px;
 }
 
 #zipcode {
-    width: 50%;
+    width: 40%;
 }
 
 /*following transition effect and background changed added for exceeding grade*/
@@ -86,6 +89,13 @@ input::placeholder{
     padding-left: 1em;
 }
 
+.newsletter label[for=feedback] {
+    padding:0;
+}
+
+.newsletter input {
+    margin: 1em 0 1em 0;
+}
 /*set textarea styles*/
 .newsletter textarea {
     width: 100%;
@@ -94,6 +104,7 @@ input::placeholder{
     background-color: #e8e1e1;
     border: none;
     border-radius: 5px;
+    margin: 1em 0 1em 0;
 }
 
 .newsletter p {
@@ -101,7 +112,7 @@ input::placeholder{
 }
 
 label, p {
-    color: #6c7275;
+    color: #4e5251;
 }
 
 form .submit {
@@ -113,11 +124,12 @@ form .submit {
 input[type=submit]{
     width:100%;
     padding: 12px 20px;
-    background-color: #2d8d9c;
+    background-color: #0b4a75;
     border-radius: 5px;
     border: none;
     box-sizing: border-box;
     margin: 8px 0;
+    color: white
 }
 
 hr {
@@ -148,7 +160,7 @@ footer {
     margin: auto;
     text-align: center;
     padding: 10px;
-    margin-top: 10px;
+    margin-top: 50px;
 }
 
 footer p {
@@ -202,7 +214,4 @@ footer p {
         margin-top:20px;
     }
 
-    #zipcode {
-        width: 25%;
-    }
 }
