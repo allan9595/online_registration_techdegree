@@ -31,6 +31,12 @@ form fieldset {
     margin: auto;
 }
 
+form fieldset.contact legend {
+   margin-bottom: 1em;
+}
+
+
+
 /*inspired by stackover at: https://stackoverflow.com/questions/9686538/align-labels-in-form-next-to-input*/
 form fieldset.contact label {
     display: inline-block;
@@ -179,6 +185,10 @@ footer p {
         margin: auto;
     }
 
+    form {
+        max-width: 1024px; /*control form size if the screen gets too big*/
+    }
+
     form .submit {
         width: 100%;
     }
@@ -213,6 +223,10 @@ footer p {
         float: left;
         width: 30%;
         margin-top:20px;
+    }
+
+    main {
+        min-height: calc(100vh - 70px); /*make the footer always at the bottom*/
     }
 
 }
